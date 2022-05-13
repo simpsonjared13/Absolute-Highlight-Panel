@@ -1,0 +1,29 @@
+<template>
+    <div class="slds-is-fixed" style="width: 32%">
+        <lightning-card title="Contact" icon-name={iconName}>
+            <lightning-record-view-form object-api-name={objectApiName} record-id={recordId} density="comfy">
+                <lightning-layout horizontal-align="space" multiple-rows="true" pull-to-boundary="small">
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="Name"></lightning-output-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="Email"></lightning-output-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="Phone"></lightning-output-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="Title"></lightning-output-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="FirstName"></lightning-output-field>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small">
+                        <lightning-output-field field-name="LastName"></lightning-output-field>
+                    </lightning-layout-item>
+                </lightning-layout>
+
+            </lightning-record-view-form>
+        </lightning-card>
+    </div>
+</template>
