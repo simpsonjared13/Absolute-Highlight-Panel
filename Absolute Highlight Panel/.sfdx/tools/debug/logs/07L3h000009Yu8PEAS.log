@@ -1,0 +1,64 @@
+54.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,FINER;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: Id recordId = 'a003h00000CoknwAAB'; 
+Execute Anonymous: System.debug('object name>> '+ recordId.getsobjecttype());
+Execute Anonymous: 
+Execute Anonymous: Schema.DescribeSObjectResult[] descResult = Schema.describeSObjects(new String[]{'Contact'});
+Execute Anonymous: System.debug('Schema : ' + descResult);
+07:16:46.319 (319417428)|USER_INFO|[EXTERNAL]|0053h000003fohQ|simpsonjared13@wise-bear-6wpiq7.com|(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)|GMT-07:00
+07:16:46.319 (319578926)|EXECUTION_STARTED
+07:16:46.319 (319696442)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+07:16:46.319 (320633075)|VARIABLE_SCOPE_BEGIN|[4]|descResult|List<Schema.DescribeSObjectResult>|true|false
+07:16:46.319 (320918710)|VARIABLE_SCOPE_BEGIN|[1]|recordId|Id|false|false
+07:16:46.319 (321603572)|HEAP_ALLOCATE|[79]|Bytes:3
+07:16:46.319 (321898152)|HEAP_ALLOCATE|[84]|Bytes:152
+07:16:46.319 (322260030)|HEAP_ALLOCATE|[399]|Bytes:408
+07:16:46.319 (322380380)|HEAP_ALLOCATE|[412]|Bytes:408
+07:16:46.319 (322477172)|HEAP_ALLOCATE|[520]|Bytes:48
+07:16:46.319 (322567142)|HEAP_ALLOCATE|[139]|Bytes:6
+07:16:46.319 (322620036)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+07:16:46.319 (322977379)|STATEMENT_EXECUTE|[1]
+07:16:46.319 (322990896)|STATEMENT_EXECUTE|[1]
+07:16:46.319 (322998473)|HEAP_ALLOCATE|[1]|Bytes:18
+07:16:46.319 (323389649)|HEAP_ALLOCATE|[1]|Bytes:4
+07:16:46.319 (324041449)|VARIABLE_ASSIGNMENT|[1]|recordId|"a003h00000CoknwAAB"
+07:16:46.319 (324112924)|STATEMENT_EXECUTE|[2]
+07:16:46.319 (324122272)|HEAP_ALLOCATE|[2]|Bytes:14
+07:16:46.319 (326569728)|HEAP_ALLOCATE|[2]|Bytes:10
+07:16:46.319 (326614455)|HEAP_ALLOCATE|[2]|Bytes:24
+07:16:46.319 (326697092)|HEAP_ALLOCATE|[52]|Bytes:5
+07:16:46.319 (326841744)|HEAP_ALLOCATE|[58]|Bytes:5
+07:16:46.319 (326870975)|HEAP_ALLOCATE|[66]|Bytes:7
+07:16:46.319 (326974156)|USER_DEBUG|[2]|DEBUG|object name>> Vehicle__c
+07:16:46.319 (327015886)|STATEMENT_EXECUTE|[4]
+07:16:46.319 (327044669)|HEAP_ALLOCATE|[4]|Bytes:4
+07:16:46.319 (327833790)|HEAP_ALLOCATE|[4]|Bytes:7
+07:16:46.319 (328409862)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+07:16:46.319 (329729554)|HEAP_ALLOCATE|[4]|Bytes:8
+07:16:46.319 (329768224)|HEAP_ALLOCATE|[4]|Bytes:8
+07:16:46.319 (330045503)|VARIABLE_ASSIGNMENT|[4]|descResult|"common.apex.runtime.impl.ScalarList@dc1ea1e8"|0x3ba21af3
+07:16:46.319 (330078356)|STATEMENT_EXECUTE|[5]
+07:16:46.319 (330089765)|HEAP_ALLOCATE|[5]|Bytes:9
+07:16:46.319 (331406258)|HEAP_ALLOCATE|[5]|Bytes:833
+07:16:46.319 (331494986)|HEAP_ALLOCATE|[5]|Bytes:842
+07:16:46.319 (331576425)|USER_DEBUG|[5]|DEBUG|Schema : (
+Schema.DescribeSObjectResult[getAssociateEntityType=null;getAssociateParentEntity=null;getDataTranslationEnabled=null;getDefaultImplementation=null;getHasSubtypes=false;getImplementedBy=null;getImplementsInterfaces=null;getIsInterface=false;getIsSubtype=false;getKeyPrefix=003;getLabel=Contact;getLabelPlural=Contacts;getName=Contact;getRecordTypeInfosByDeveloperName={Master=Schema.RecordTypeInfo[getDeveloperName=Master;getName=Master;getRecordTypeId=012000000000000AAA;isActive=true;isAvailable=true;isDefaultRecordTypeMapping=true;isMaster=true;]};getSObjectDescribeOption=DEFERRED;isAccessible=true;isCreateable=true;isCustom=false;isCustomSetting=false;isDeletable=true;isDeprecatedAndHidden=false;isFeedEnabled=true;isMergeable=true;isMruEnabled=true;isQueryable=true;isSearchable=true;isUndeletable=true;isUpdateable=true;])
+07:16:46.331 (331701853)|CUMULATIVE_LIMIT_USAGE
+07:16:46.331 (331701853)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+07:16:46.331 (331701853)|CUMULATIVE_LIMIT_USAGE_END
+
+07:16:46.319 (332090121)|CODE_UNIT_FINISHED|execute_anonymous_apex
+07:16:46.319 (332119408)|EXECUTION_FINISHED
